@@ -94,8 +94,6 @@
     return STATUS_TEXT[p.status] ? p.status : 'before';
   }
 
-  var firstRender = true;
-
   function renderPresales() {
     var statuses = [];
     document.querySelectorAll('[data-presale]').forEach(function (box) {
@@ -119,10 +117,7 @@
         btn.setAttribute('aria-disabled', 'true');
         btn.setAttribute('tabindex', '-1');
       }
-      // 受付中のものは最初から開いておく
-      if (firstRender && status === 'open') toggle(box, true);
     });
-    firstRender = false;
 
     // ファーストビューの案内
     var badge = document.getElementById('heroBadge');
@@ -178,6 +173,13 @@
       }
     });
   });
+
+  /* ---------- 背景動画：ファーストビューを過ぎたら少し暗くする ---------- */
+  function onScroll() {
+    document.body.classList.toggle('is-scrolled', window.scrollY > window.innerHeight * 0.6);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 
   /* ---------- メニュー ---------- */
   var menu = document.getElementById('menu');

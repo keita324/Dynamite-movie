@@ -42,30 +42,33 @@
     </div>
   </header>
 
+  <!-- 流れる帯 -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>BTS LIVE 20●● in JAPAN</span><span>TICKET PRESALE</span><span>BTS LIVE 20●● in JAPAN</span><span>TICKET PRESALE</span><span>BTS LIVE 20●● in JAPAN</span><span>TICKET PRESALE</span><span>BTS LIVE 20●● in JAPAN</span><span>TICKET PRESALE</span>
+    </div>
+  </div>
+
   <main id="main">
 
     <!-- ========== SCHEDULE（公演概要） ========== -->
     <section class="section" id="schedule">
       <div class="container">
-        <h2 class="section-title">schedule</h2>
-        <div class="section-content">
+        <h2 class="section-title"><span class="section-title__en">schedule</span><span class="section-title__ja">公演概要</span></h2>
+        <div class="section-content schedule">
 
-          <div class="box bg-white schedule">
-            <div class="schedule__place">
-              <p class="schedule__name">BTS LIVE 20●● in JAPAN</p>
-              <p class="schedule__venue">●●●●スタジアム</p>
-              <p class="schedule__pref">●●県</p>
-              <a class="button bg-red schedule__btn" href="#presale"><span>先行受付を見る</span></a>
-            </div>
-            <div class="schedule__date">
-              <p class="schedule__day font-en">20●●.●●.●● <small>(●)</small></p>
-              <p class="schedule__time font-en">OPEN ●●:●● / START ●●:●●</p>
-              <dl class="schedule__info">
-                <div><dt>出演</dt><dd>BTS</dd></div>
-                <div><dt>主催</dt><dd>●●●●</dd></div>
-              </dl>
-            </div>
+          <div class="show">
+            <p class="show__date font-en">20●●.●●.●●<small>(●)</small></p>
+            <p class="show__venue">●●●●スタジアム<small>●●県</small></p>
           </div>
+
+          <dl class="info">
+            <div><dt>公演名</dt><dd>BTS LIVE 20●● in JAPAN</dd></div>
+            <div><dt>日時</dt><dd>20●●年●月●日(●) <span class="nowrap">開場 ●●:●● ／ 開演 ●●:●●</span></dd></div>
+            <div><dt>会場</dt><dd>●●●●スタジアム（●●県）</dd></div>
+            <div><dt>出演</dt><dd>BTS</dd></div>
+            <div><dt>主催</dt><dd>●●●●</dd></div>
+          </dl>
 
         </div>
       </div>
@@ -74,62 +77,49 @@
     <!-- ========== TICKET（チケット概要） ========== -->
     <section class="section" id="ticket">
       <div class="container">
-        <h2 class="section-title">ticket</h2>
-        <div class="section-content">
+        <h2 class="section-title"><span class="section-title__en">ticket</span><span class="section-title__ja">チケット概要</span></h2>
+        <div class="section-content ticket">
 
-          <ul class="price">
-            <li>
-              <p class="price__val font-en">¥●●,●●●</p>
-              <p class="price__name">S指定席 <span class="font-en">S Reserved Seat (TAX in)</span></p>
-            </li>
-            <li>
-              <p class="price__val font-en">¥●●,●●●</p>
-              <p class="price__name">指定席 <span class="font-en">Reserved Seat (TAX in)</span></p>
-            </li>
-            <li>
-              <p class="price__val font-en">¥●●,●●●</p>
-              <p class="price__name">注釈付き指定席 <span class="font-en">Restricted View (TAX in)</span></p>
-            </li>
-          </ul>
-
-          <p class="rule"><span>抽選販売</span><span>お一人さま ● 枚まで</span><span>価格は税込</span></p>
-
-          <div class="box accordion bg-white">
-            <button class="accordion-title" type="button" aria-expanded="false">
-              <strong>座席図</strong>
-              <span class="label">- S指定席・指定席・注釈付き指定席の位置 -</span>
-              <span class="accordion-icon" aria-hidden="true"></span>
-            </button>
-            <div class="accordion-content">
-              <div class="accordion-inner">
-                <figure class="seatmap">
-                  <svg viewBox="0 0 480 320" role="img" aria-label="座席図イメージ：アリーナがS指定席、スタンドが指定席、ステージサイドが注釈付き指定席">
-                    <defs>
-                      <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-                        <rect width="7" height="7" fill="#fff"/><rect width="2.5" height="7" fill="#000"/>
-                      </pattern>
-                      <clipPath id="oval"><rect x="10" y="10" width="460" height="300" rx="150"/></clipPath>
-                    </defs>
-                    <rect x="10" y="10" width="460" height="300" rx="150" fill="#000"/>
-                    <g clip-path="url(#oval)"><rect x="345" y="0" width="140" height="320" fill="url(#hatch)"/></g>
-                    <rect x="10" y="10" width="460" height="300" rx="150" fill="none" stroke="#000" stroke-width="3"/>
-                    <rect x="70" y="70" width="340" height="180" rx="90" fill="#fff"/>
-                    <rect x="108" y="98" width="196" height="124" rx="4" fill="#e40723"/>
-                    <rect x="320" y="98" width="40" height="124" rx="3" fill="#000"/>
-                    <text x="340" y="160" fill="#fff" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="middle" transform="rotate(90 340 160)" letter-spacing="3">STAGE</text>
-                  </svg>
-                  <figcaption>
-                    <ul class="legend">
-                      <li><i class="sw sw--s"></i>S指定席</li>
-                      <li><i class="sw sw--a"></i>指定席</li>
-                      <li><i class="sw sw--b"></i>注釈付き指定席</li>
-                    </ul>
-                    <p class="note">※座席図はイメージです。</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
+          <div class="ticket__price">
+            <ul class="price">
+              <li>
+                <p class="price__name"><i class="sw sw--s"></i>S指定席</p>
+                <p class="price__val font-en">¥●●,●●●</p>
+              </li>
+              <li>
+                <p class="price__name"><i class="sw sw--a"></i>指定席</p>
+                <p class="price__val font-en">¥●●,●●●</p>
+              </li>
+              <li>
+                <p class="price__name"><i class="sw sw--b"></i>注釈付き指定席</p>
+                <p class="price__val font-en">¥●●,●●●</p>
+              </li>
+            </ul>
+            <ul class="rule">
+              <li>抽選販売</li>
+              <li>お一人さま ● 枚まで</li>
+              <li>価格は税込</li>
+            </ul>
           </div>
+
+          <figure class="seatmap">
+            <svg viewBox="0 0 480 320" role="img" aria-label="座席図イメージ：アリーナがS指定席、スタンドが指定席、ステージサイドが注釈付き指定席">
+              <defs>
+                <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                  <rect width="7" height="7" fill="#fff"/><rect width="2.5" height="7" fill="#000"/>
+                </pattern>
+                <clipPath id="oval"><rect x="10" y="10" width="460" height="300" rx="150"/></clipPath>
+              </defs>
+              <rect x="10" y="10" width="460" height="300" rx="150" fill="#000"/>
+              <g clip-path="url(#oval)"><rect x="345" y="0" width="140" height="320" fill="url(#hatch)"/></g>
+              <rect x="10" y="10" width="460" height="300" rx="150" fill="none" stroke="#000" stroke-width="3"/>
+              <rect x="70" y="70" width="340" height="180" rx="90" fill="#fff"/>
+              <rect x="108" y="98" width="196" height="124" rx="4" fill="#e40723"/>
+              <rect x="320" y="98" width="40" height="124" rx="3" fill="#000"/>
+              <text x="340" y="160" fill="#fff" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="middle" transform="rotate(90 340 160)" letter-spacing="3">STAGE</text>
+            </svg>
+            <figcaption>※座席図はイメージです。</figcaption>
+          </figure>
 
         </div>
       </div>
@@ -138,47 +128,36 @@
     <!-- ========== PRESALE（先行受付） ========== -->
     <section class="section" id="presale">
       <div class="container">
-        <h2 class="section-title">presale</h2>
+        <h2 class="section-title"><span class="section-title__en">presale</span><span class="section-title__ja">先行受付</span></h2>
         <div class="section-content">
 
-          <!-- ドコモMAX 先行 -->
-          <div class="box accordion presale" data-presale="max" data-status="open">
-            <button class="accordion-title" type="button" aria-expanded="false">
-              <span class="status" data-role="status">受付中</span>
-              <strong>ドコモMAX 先行<span class="nowrap">(抽選制)</span></strong>
-              <span class="label">受付期間 : <span data-role="period">20●●/●/●(●) ●●:00 〜 ●/●(●) 23:59</span></span>
-              <span class="accordion-icon" aria-hidden="true"></span>
-            </button>
-            <div class="accordion-content">
-              <div class="accordion-inner">
-                <h3 class="title">対象</h3>
-                <p>ドコモMAXをご契約中のお客さま</p>
-                <h3 class="title">受付期間</h3>
-                <p data-role="period">20●●/●/●(●) ●●:00 〜 ●/●(●) 23:59</p>
-                <a class="button bg-red" href="#" data-role="apply" data-link="maxApply"><span>ドコモMAX先行に申し込む</span></a>
-                <a class="button bg-black small" href="#" data-link="maxContract"><span>ドコモMAX契約はこちら</span></a>
-              </div>
-            </div>
-          </div>
+          <div class="presale">
 
-          <!-- Leminoプレミアム 先行 -->
-          <div class="box accordion presale" data-presale="lemino" data-status="before">
-            <button class="accordion-title" type="button" aria-expanded="false">
-              <span class="status" data-role="status">受付前</span>
-              <strong>Leminoプレミアム 先行<span class="nowrap">(抽選制)</span></strong>
-              <span class="label">受付期間 : <span data-role="period">20●●/●/●(●) ●●:00 〜 ●/●(●) 23:59</span></span>
-              <span class="accordion-icon" aria-hidden="true"></span>
-            </button>
-            <div class="accordion-content">
-              <div class="accordion-inner">
-                <h3 class="title">対象</h3>
-                <p>Leminoプレミアムをご契約中のお客さま</p>
-                <h3 class="title">受付期間</h3>
-                <p data-role="period">20●●/●/●(●) ●●:00 〜 ●/●(●) 23:59</p>
-                <a class="button bg-red" href="#" data-role="apply" data-link="leminoApply"><span>Leminoプレミアム先行に申し込む</span></a>
-                <a class="button bg-black small" href="#" data-link="leminoContract"><span>Leminoプレミアム契約はこちら</span></a>
-              </div>
-            </div>
+            <!-- ドコモMAX 先行 -->
+            <article class="card" data-presale="max" data-status="open">
+              <p class="status" data-role="status">受付中</p>
+              <h3 class="card__title">ドコモMAX 先行</h3>
+              <p class="card__target">ドコモMAXをご契約中のお客さま</p>
+              <dl class="card__period">
+                <dt>受付期間</dt>
+                <dd data-role="period">20●●/●/●(●) ●●:00 〜 ●/●(●) 23:59</dd>
+              </dl>
+              <a class="btn btn--primary" href="#" data-role="apply" data-link="maxApply"><span>ドコモMAX先行に申し込む</span></a>
+              <a class="btn btn--sub" href="#" data-link="maxContract"><span>ドコモMAX契約はこちら</span></a>
+            </article>
+
+            <!-- Leminoプレミアム 先行 -->
+            <article class="card" data-presale="lemino" data-status="before">
+              <p class="status" data-role="status">受付前</p>
+              <h3 class="card__title">Leminoプレミアム 先行</h3>
+              <p class="card__target">Leminoプレミアムをご契約中のお客さま</p>
+              <dl class="card__period">
+                <dt>受付期間</dt>
+                <dd data-role="period">20●●/●/●(●) ●●:00 〜 ●/●(●) 23:59</dd>
+              </dl>
+              <a class="btn btn--primary" href="#" data-role="apply" data-link="leminoApply"><span>Leminoプレミアム先行に申し込む</span></a>
+              <a class="btn btn--sub" href="#" data-link="leminoContract"><span>Leminoプレミアム契約はこちら</span></a>
+            </article>
           </div>
 
           <!-- お申込みの流れ -->
@@ -186,9 +165,9 @@
             <h3 class="flow__title">お申込みの流れ</h3>
             <ol class="flow__list">
               <li><span class="font-en">1</span>申込ボタンを押す</li>
-              <li><span class="font-en">2</span>dアカウントで<br class="pc-only">ログイン</li>
-              <li><span class="font-en">3</span>ご契約状況を<br class="pc-only">自動確認</li>
-              <li><span class="font-en">4</span>dチケットで<br class="pc-only">抽選申込</li>
+              <li><span class="font-en">2</span>dアカウントでログイン</li>
+              <li><span class="font-en">3</span>ご契約状況を自動確認</li>
+              <li><span class="font-en">4</span>dチケットで抽選申込</li>
             </ol>
             <p class="flow__note">※ご契約が確認できなかった場合は、各サービスのご契約ページをご案内します。</p>
           </div>
@@ -200,26 +179,15 @@
     <!-- ========== NOTES（注意事項） ========== -->
     <section class="section" id="notes">
       <div class="container">
-        <h2 class="section-title">notes</h2>
+        <h2 class="section-title"><span class="section-title__en">notes</span><span class="section-title__ja">お申込み時の注意事項</span></h2>
         <div class="section-content">
 
-          <div class="box accordion bg-red">
-            <button class="accordion-title" type="button" aria-expanded="false">
-              <strong>お申込み時の注意事項</strong>
-              <span class="label pill">- 必ずご確認ください -</span>
-              <span class="accordion-icon" aria-hidden="true"></span>
-            </button>
-            <div class="accordion-content">
-              <div class="accordion-inner">
-                <ul class="notes">
-                  <li>お申込みには、対象サービスをご契約中のdアカウントでのログインが必要です。</li>
-                  <li>ドコモMAX先行とLeminoプレミアム先行は受付サイトが異なります。必ず本ページの各申込ボタンからお進みください。</li>
-                  <li>重複申込・重複当選の取り扱い：●●●●●●●●●●●●●●●●（確定後に掲載）</li>
-                  <li>●●●●●●●●●●●●●●●●●●●●●●●●●●</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <ul class="notes">
+            <li>お申込みには、対象サービスをご契約中のdアカウントでのログインが必要です。</li>
+            <li>ドコモMAX先行とLeminoプレミアム先行は受付サイトが異なります。必ず本ページの各申込ボタンからお進みください。</li>
+            <li>重複申込・重複当選の取り扱い：●●●●●●●●●●●●●●●●（確定後に掲載）</li>
+            <li>●●●●●●●●●●●●●●●●●●●●●●●●●●</li>
+          </ul>
 
         </div>
       </div>
@@ -228,53 +196,59 @@
     <!-- ========== FAQ（よくあるご質問） ========== -->
     <section class="section" id="faq">
       <div class="container">
-        <h2 class="section-title">faq</h2>
+        <h2 class="section-title"><span class="section-title__en">faq</span><span class="section-title__ja">よくあるご質問</span></h2>
         <div class="section-content">
 
-          <div class="box accordion bg-black faq">
-            <button class="accordion-title" type="button" aria-expanded="false">
-              <strong>申込ボタンを押したら、契約ページが表示されました。</strong>
-              <span class="accordion-icon" aria-hidden="true"></span>
-            </button>
-            <div class="accordion-content">
-              <div class="accordion-inner">
-                <p>ログインしたdアカウントで対象サービスのご契約が確認できなかった場合に表示されます。ご契約に紐づくdアカウントでログインしているかをご確認ください。</p>
+          <div class="faq">
+            <div class="accordion">
+              <button class="accordion-title" type="button" aria-expanded="false">
+                <span class="faq__q font-en" aria-hidden="true">Q</span>
+                <strong>申込ボタンを押したら、契約ページが表示されました。</strong>
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <div class="accordion-inner">
+                  <p>ログインしたdアカウントで対象サービスのご契約が確認できなかった場合に表示されます。ご契約に紐づくdアカウントでログインしているかをご確認ください。</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="box accordion bg-black faq">
-            <button class="accordion-title" type="button" aria-expanded="false">
-              <strong>これから契約しても、先行に申し込めますか？</strong>
-              <span class="accordion-icon" aria-hidden="true"></span>
-            </button>
-            <div class="accordion-content">
-              <div class="accordion-inner">
-                <p>●●●●●●●●●●●●●●●●●●●●●●（確定後に掲載）</p>
+            <div class="accordion">
+              <button class="accordion-title" type="button" aria-expanded="false">
+                <span class="faq__q font-en" aria-hidden="true">Q</span>
+                <strong>これから契約しても、先行に申し込めますか？</strong>
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <div class="accordion-inner">
+                  <p>●●●●●●●●●●●●●●●●●●●●●●（確定後に掲載）</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="box accordion bg-black faq">
-            <button class="accordion-title" type="button" aria-expanded="false">
-              <strong>両方のサービスを契約しています。両方の先行に申し込めますか？</strong>
-              <span class="accordion-icon" aria-hidden="true"></span>
-            </button>
-            <div class="accordion-content">
-              <div class="accordion-inner">
-                <p>●●●●●●●●●●●●●●●●●●●●●●（確定後に掲載）</p>
+            <div class="accordion">
+              <button class="accordion-title" type="button" aria-expanded="false">
+                <span class="faq__q font-en" aria-hidden="true">Q</span>
+                <strong>両方のサービスを契約しています。両方の先行に申し込めますか？</strong>
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <div class="accordion-inner">
+                  <p>●●●●●●●●●●●●●●●●●●●●●●（確定後に掲載）</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="box accordion bg-black faq">
-            <button class="accordion-title" type="button" aria-expanded="false">
-              <strong>dアカウントのID・パスワードがわかりません。</strong>
-              <span class="accordion-icon" aria-hidden="true"></span>
-            </button>
-            <div class="accordion-content">
-              <div class="accordion-inner">
-                <p>dアカウントのログイン画面から、IDの確認・パスワードの再設定ができます。<a href="#" data-link="daccountHelp">dアカウントのヘルプ</a></p>
+            <div class="accordion">
+              <button class="accordion-title" type="button" aria-expanded="false">
+                <span class="faq__q font-en" aria-hidden="true">Q</span>
+                <strong>dアカウントのID・パスワードがわかりません。</strong>
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <div class="accordion-inner">
+                  <p>dアカウントのログイン画面から、IDの確認・パスワードの再設定ができます。<a href="#" data-link="daccountHelp">dアカウントのヘルプ</a></p>
+                </div>
               </div>
             </div>
           </div>
