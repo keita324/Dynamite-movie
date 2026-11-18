@@ -163,14 +163,15 @@ body.is-scrolled #bg-mv { opacity: .3; }
 
 /* ---------- SCHEDULE ---------- */
 .show { padding-bottom: 1.5rem; border-bottom: 3px solid var(--white); }
-.show__date { font-size: clamp(2.75rem, 14vw, 4rem); font-weight: 700; line-height: 1.1; }
-.show__date small { margin-left: .3em; font-size: .4em; color: var(--red); }
+.show__date { font-size: clamp(2rem, 10vw, 4rem); font-weight: 700; line-height: 1.1; overflow-wrap: anywhere; }
+.show__date small { display: inline-block; margin-left: .3em; font-size: .4em; color: var(--red); white-space: nowrap; }
 .show__venue { margin-top: .5rem; font-size: clamp(1.375rem, 6.5vw, 1.75rem); font-weight: 700; line-height: 1.4; }
 .show__venue small { margin-left: .75em; font-size: .6em; }
 
 .info div { display: grid; grid-template-columns: 5.5em minmax(0, 1fr); gap: 1rem; padding-block: .9rem; border-bottom: 1px solid rgba(255, 255, 255, .35); }
 .info dt { font-size: .75rem; line-height: 2; }
 .info dd { font-weight: 700; }
+@media (max-width: 359px) { .info .nowrap { white-space: normal; } }
 
 /* ---------- TICKET ---------- */
 .ticket { display: grid; gap: 2.5rem; }
